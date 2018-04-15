@@ -1,0 +1,33 @@
+{
+  "name": "sth-api",
+  "version": "0.1.0",
+  "description": "A Node.JS module which provides a wrapper for the SmartHoldem API.",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartholdem/sthjs-wrapper.git"
+  },
+  "keywords": [
+    "STH",
+    "API",
+    "Node.js",
+    "SmartHoldemJS"
+  ],
+  "author": "SmartHoldemDev <dev@smartholdem.io>",
+  "license": "MIT",
+  "dependencies": {
+    "bigi": "^1.4.2",
+    "bignumber.js": "^4.0.2",
+    "bip66": "^1.1.5",
+    "ecurve": "^1.0.5",
+    "line-by-line": "^0.1.5",
+    "moment": "^2.18.1",
+    "mysql": "^2.13.0",
+    "node-schedule": "^1.2.3",
+    "request": "^2.81.0",
+    "secp256k1": "^3.3.0",
+    "sthjs": "git+https://github.com/smartholdem/sth-js.git#master",
+    "typeforce": "^1.11.1",
+    "wif": "^2.0.6"
+  }
+}
