@@ -10,7 +10,7 @@ var network = "main" //or "dev"
 smartholdemApi.init(network);
 ```
 
-## Documentation
+## Wrapper Documentation
 
 - [Accounts](/docs/accounts.md)
 - [Transactions](/docs/transactions.md)
