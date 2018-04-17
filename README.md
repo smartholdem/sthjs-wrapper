@@ -9,3 +9,11 @@ var smartholdemApi = require("sth-api");
 var network = "main" //or "dev"
 smartholdemApi.init(network);
 ```
+
+## Documentation
+
+- [Accounts](/docs/accounts.md)
+- [Transactions](/docs/transactions.md)
+- [Peers](/docs/peers.md)
+- [Blocks](/docs/blocks.md)
+- [Delegates](/docs/delegates.md)
