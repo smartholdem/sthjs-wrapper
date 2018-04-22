@@ -31,7 +31,7 @@ Api.useNet = (netName) => {
 
         var netSeeds = seeds[netName].map((seed) => `${seed}:${netName == "main" ? 6100 : 6101}`);
 
-        if(Api.node == null)
+        if(Api.node == '') // or null
             Api.node = netSeeds[Math.floor(Math.random() * netSeeds.length)];
         Api.seeds = netSeeds;
 
