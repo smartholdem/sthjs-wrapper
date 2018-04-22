@@ -2,7 +2,7 @@ const request = require("request");
 const seeds = require("./seeds.js");
 
 const Api = {
-    node: "",
+    node: "88.198.67.196:6101",
     seeds: [],
     peers: [],
     hash: ""
@@ -30,7 +30,7 @@ Api.useNet = (netName) => {
             reject("Network name doesn't exist");
 
         var port = 6100;
-        if (netName != "main") {
+        if (netName !== "main") {
             port = 6101;
         }
 
@@ -65,7 +65,7 @@ Api.useNet = (netName) => {
     });
 };
 
-Api.setPreferredNode = (prefNode, main = true) => {
+Api.setPreferredNode = (prefNode, main = false) => {
     Api.node = `${prefNode}:${main ? 6100 : 6101}`;
 };
 
