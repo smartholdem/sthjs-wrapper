@@ -30,7 +30,7 @@ Api.useNet = (netName) => {
             reject("Network name doesn't exist");
 
         var netSeeds = seeds[netName].map((seed) => `${seed}:${netName == "main" ? 6100 : 6101}`);
-        console.log(netSeeds);
+
         if(Api.node == null)
             Api.node = netSeeds[Math.floor(Math.random() * netSeeds.length)];
         Api.seeds = netSeeds;
