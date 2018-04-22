@@ -2,7 +2,7 @@ const request = require("request");
 const seeds = require("./seeds.js");
 
 const Api = {
-    node: "88.198.67.196:6101",
+    node: "",
     seeds: [],
     peers: [],
     hash: ""
@@ -65,7 +65,7 @@ Api.useNet = (netName) => {
     });
 };
 
-Api.setPreferredNode = (prefNode, main = false) => {
+Api.setPreferredNode = (prefNode, main = true) => {
     Api.node = `${prefNode}:${main ? 6100 : 6101}`;
 };
 
