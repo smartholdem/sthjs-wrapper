@@ -29,7 +29,13 @@ Api.useNet = (netName) => {
         if(!seeds[netName])
             reject("Network name doesn't exist");
 
-        var netSeeds = seeds[netName].map((seed) => `${seed}:${netName == "main" ? 6100 : 6101}`);
+        var port = 6100;
+        if (netName != "main") {
+            port = 6101;
+        }
+
+        // var netSeeds = seeds[netName].map((seed) => `${seed}:${netName == "main" ? 6100 : 6101}`);
+        var netSeeds = seeds[netName].map((seed) => `${seed}:${port}`);
 
         if(Api.node == '') // or null
             Api.node = netSeeds[Math.floor(Math.random() * netSeeds.length)];
@@ -43,8 +49,10 @@ Api.useNet = (netName) => {
                 Api.get({url: `${Api.node}/api/peers`, json: true}, (errors, success, response) => {
                     if(response != null && response.success)
                     {
+
                         Api.peers = response.peers.filter((peer) => peer.status == "OK" && peer.errors == 0)
                                                   .map((p) => `${p.ip}:${netName == "main" ? 6100 : 6101}`);
+
                         resolve();
                     }
                     else
