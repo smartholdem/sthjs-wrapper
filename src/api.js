@@ -35,7 +35,7 @@ Api.useNet = (netName) => {
             Api.node = netSeeds[Math.floor(Math.random() * netSeeds.length)];
         Api.seeds = netSeeds;
 
-        Api.get({url: `${Api.node}/api/blocks/getNetHash`, json: true}, (err, succ, resp) => {
+        Api.get({url: `${Api.node}/api/blocks/getNetHash`, json: true}, (err, success, resp) => {
             if(resp && resp.success)
             {
                 Api.hash = resp.nethash;
