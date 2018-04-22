@@ -40,7 +40,7 @@ Api.useNet = (netName) => {
             {
                 Api.hash = resp.nethash;
                 console.log("Nethash: " + Api.hash);
-                Api.get({url: `${Api.node}/api/peers`, json: true}, (err, success, response) => {
+                Api.get({url: `${Api.node}/api/peers`, json: true}, (errors, success, response) => {
                     if(response != null && response.success)
                     {
                         Api.peers = response.peers.filter((peer) => peer.status == "OK" && peer.errors == 0)
