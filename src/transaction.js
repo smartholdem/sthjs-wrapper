@@ -13,12 +13,14 @@ Transaction.getTransactionsList = function (qs, callback) {
 
 Transaction.createTransaction = (passPhrase, recipientAddr, amount, options) => {
     var vendorField, secondPassphrase = null;
+    var version = 0x3f;
     if(options)
     {
         vendorField = options.vendorField ? options.vendorField : null;
         secondPassphrase = options.secondPassphrase ? options.secondPassphrase : null;
+        version = options.version ? options.version : 0x3f;
     }
-    var transaction = sth.transaction.createTransaction(recipientAddr, amount, vendorField, passPhrase, secondPassphrase);
+    var transaction = sth.transaction.createTransaction(recipientAddr, amount, vendorField, passPhrase, secondPassphrase, version);
     return transaction;
 };
 

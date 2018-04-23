@@ -13,6 +13,7 @@ Api.broadcast = true;
 var isDebug = false;
 
 Api.init = (networkName) => {
+
     Api.initP = Api.useNet(networkName);
 };
 
@@ -32,6 +33,7 @@ Api.useNet = (netName) => {
         var port = 6100;
         if (netName !== "main") {
             port = 6101;
+
         }
 
         // var netSeeds = seeds[netName].map((seed) => `${seed}:${netName == "main" ? 6100 : 6101}`);
