@@ -26,7 +26,7 @@
     "node-schedule": "^1.2.3",
     "request": "^2.81.0",
     "secp256k1": "^3.3.0",
-    "sthjs": "git+https://github.com/smartholdem/sth-js.git#master",
+    "sthjs": "git+https://github.com/smartholdem/sth-js.git#wallet",
     "typeforce": "^1.11.1",
     "wif": "^2.0.6"
   }
