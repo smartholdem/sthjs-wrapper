@@ -21,7 +21,6 @@ module.exports = {
 
     // Transaction
     getTransactionsList: Transaction.getTransactionsList,
-    getTransactionsListByAddress: Transaction.getTransactionsListByAddress,
     getTransaction: Transaction.getTransaction,
     createTransaction: Transaction.createTransaction,
     createDelegateTransaction: Transaction.createDelegateTransaction,

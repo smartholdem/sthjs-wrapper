@@ -3,18 +3,6 @@ const Api = require("./api.js");
 
 const Transaction = {};
 
-Transaction.getTransactionsListByAddress = function (recipientId, orderBy, offset, callback) {
-    Api.get({
-        path: "/api/transactions",
-        qs: {
-            recipientId: recipientId,
-            orderBy: orderBy,
-            offset: offset
-        },
-        json: true
-    }, callback);
-};
-
 Transaction.getTransactionsList = function (qs, callback) {
     Api.get({
         path: "/api/transactions",
