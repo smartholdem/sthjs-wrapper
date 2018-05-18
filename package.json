@@ -30,6 +30,10 @@
   "bugs": {
     "url": "https://github.com/smartholdem/sthjs-wrapper/issues"
   },
+  "directories": {
+    "doc": ".",
+    "examples": "docs"
+  },
   "dependencies": {
     "bigi": "^1.4.2",
     "bignumber.js": "^4.0.2",
