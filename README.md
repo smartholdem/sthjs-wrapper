@@ -12,7 +12,7 @@ smartholdemApi.init(network);
 
 ```
 
-## Wrapper Documentation
+## SmartHoldem API Wrapper Documentation
 
 - [Accounts](/docs/accounts.md)
 - [Transactions](/docs/transactions.md)
