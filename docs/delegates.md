@@ -9,7 +9,7 @@ Get delegate by username.
 
 **Request**
 ```js
-var smartholdemApi = require("sth-api");
+var smartholdemApi = require("sthjs-wrapper");
 
 smartholdemApi.getDelegate("username of delegate", (error, success, response) => {
     console.log(response);
@@ -39,7 +39,7 @@ Get delegates list.
 
 **Request**
 ```js
-var smartholdemApi = require("sth-api");
+var smartholdemApi = require("sthjs-wrapper");
 var parameters = {
   "limit: Limit to show. Integer. (Integer)",
   "offset: Offset (Integer)",
@@ -64,7 +64,7 @@ Get delegates next in line to forge
 
 **Request**
 ```js
-var smartholdemApi = require("sth-api");
+var smartholdemApi = require("sthjs-wrapper");
 smartholdemApi.getNextForgers((error, success, response) => {
     console.log(response);
 });
@@ -86,7 +86,7 @@ Get votes by account address.
 
 **Request**
 ```js
-var smartholdemApi = require("sth-api");
+var smartholdemApi = require("sthjs-wrapper");
 smartholdemApi.getVotes("Address of the account. (String)", (error, success, response) => {
     console.log(response);
 });
@@ -105,7 +105,7 @@ Get voters of delegate.
 
 **Request**
 ```js
-var smartholdemApi = require("sth-api");
+var smartholdemApi = require("sthjs-wrapper");
 smartholdemApi.getVoters("Public key of delegate. (String)", (error, success, response) => {
     console.log(response);
 });

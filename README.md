@@ -5,8 +5,8 @@
 Before you begin, choose a network to initialize a list of nodes in that network
 
 ```
-var smartholdemApi = require("sth-api");
-var network = "main" //or "dev"
+var smartholdemApi = require('sthjs-wrapper');
+var network = 'main'; //or 'dev'
 smartholdemApi.init(network);
 ```
 

@@ -5,7 +5,7 @@ Blocks manage API.
 Get block by id.
 
 ```js
-var smartholdemApi = require("sth-api")
+var smartholdemApi = require("sthjs-wrapper")
 smartholdemApi.getBlock("id: Id of block", (err, success, response) => {
   console.log(response);
 });
@@ -37,7 +37,7 @@ smartholdemApi.getBlock("id: Id of block", (err, success, response) => {
 Get all blocks.
 
 ```js
-var smartholdemApi = require("sth-api")
+var smartholdemApi = require("sthjs-wrapper")
 var parameters = {
   "totalFee: total fee of block. (Integer)",
   "totalAmount: total amount of block. (Integer)",
@@ -70,7 +70,7 @@ All parameters joins by OR.
 Get transaction fee for sending "normal" transactions.
 
 ```js
-var smartholdemApi = require("sth-api")
+var smartholdemApi = require("sthjs-wrapper")
 
 smartholdemApi.getBlockchainFee((error, success, response) => {
   console.log(response);
@@ -89,7 +89,7 @@ smartholdemApi.getBlockchainFee((error, success, response) => {
 Get blockchain height.
 
 ```js
-var smartholdemApi = require("sth-api")
+var smartholdemApi = require("sthjs-wrapper")
 
 smartholdemApi.getBlockchainHeight((error, success, response) => {
   console.log(response);
@@ -108,7 +108,7 @@ smartholdemApi.getBlockchainHeight((error, success, response) => {
 Get amount forged by account.
 
 ```js
-var smartholdemApi = require("sth-api")
+var smartholdemApi = require("sthjs-wrapper")
 
 smartholdemApi.getForgedByAccount("Delegate public key (String)",
                           (error, success, response) => {

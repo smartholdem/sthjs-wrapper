@@ -8,7 +8,7 @@ Creates a transaction object to be sent
 
 **Example**
 ```js
-var smartholdemApi = require("sth-api");
+var smartholdemApi = require("sthjs-wrapper");
 var options = {
   vendorField: "Smartbridge field (optional)",
   secondPassphrase: "Sender second passphrase (optional)"
@@ -25,7 +25,7 @@ Creates a delegate registration transaction to be sent
 
 **Example**
 ```js
-var smartholdemApi = require("sth-api");
+var smartholdemApi = require("sthjs-wrapper");
 var transaction = smartholdemApi.createDelegateTransaction("Passphrase",
                       "Delegate name",
                       "Second passphrase (optional)");
@@ -37,7 +37,7 @@ Creates a second signature transaction to be sent
 
 **Example**
 ```js
-var smartholdemApi = require("sth-api");
+var smartholdemApi = require("sthjs-wrapper");
 var transaction = smartholdemApi.createSecondSignatureTransaction("Passphrase",
                       "Second passphrase");
 console.log(transaction);
@@ -48,7 +48,7 @@ Creates a vote transaction to be sent
 
 **Example**
 ```js
-var smartholdemApi = require("sth-api");
+var smartholdemApi = require("sthjs-wrapper");
 var transaction = smartholdemApi.createVoteTransaction("Passphrase",
                       ["+58199578191950019299181920120128129"] //Array of vote strings
                       "Second passphrase");
@@ -60,7 +60,7 @@ Broadcasts an array of transactions to multiple nodes
 
 **Example**
 ```js
-var smartholdemApi = require("sth-api");
+var smartholdemApi = require("sthjs-wrapper");
 var transaction = smartholdemApi.sendTransactions([Transactions array], (error, success, response) => {
     console.log(response);
 });
@@ -84,7 +84,7 @@ Transactions list matched by provided parameters.
 
 **Request**
 ```js
-var smartholdemApi = require("sth-api");
+var smartholdemApi = require("sthjs-wrapper");
 
 var parameters = {
   "blockId": "Block id of transaction. (String)",
@@ -130,7 +130,7 @@ Transaction matched by id.
 
 **Request**
 ```js
-var smartholdemApi = require("sth-api");
+var smartholdemApi = require("sthjs-wrapper");
 smartholdemApi.getTransaction("String of transaction (String)", (error, success, response) => {
     console.log(response);
 });
@@ -149,7 +149,7 @@ Get unconfirmed transaction by id.
 
 **Request**
 ```js
-var smartholdemApi = require("sth-api");
+var smartholdemApi = require("sthjs-wrapper");
 smartholdemApi.getUnconfirmedTransaction("String of transaction (String)", (error, success, response) => {
     console.log(response);
 });
@@ -168,7 +168,7 @@ Get list of unconfirmed transactions.
 
 **Request**
 ```js
-var smartholdemApi = require("sth-api");
+var smartholdemApi = require("sthjs-wrapper");
 smartholdemApi.getUnconfirmedTransactions((error, success, response) => {
     console.log(response);
 });

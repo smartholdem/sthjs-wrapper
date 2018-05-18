@@ -7,7 +7,7 @@ Get peers list by parameters.
 
 **Request**
 ```js
-var smartholdemApi = require("sth-api")
+var smartholdemApi = require("sthjs-wrapper")
 smartholdemApi.getPeersList((error, success, response) => {
     console.log(response);
 });
@@ -38,7 +38,7 @@ Get peer by ip and port
 
 **Request**
 ```js
-var smartholdemApi = require("sth-api")
+var smartholdemApi = require("sthjs-wrapper")
 
 smartholdemApi.getPeer("ip: Ip of peer. (String)",
                "port: Port of peer. (Integer)",
@@ -60,7 +60,7 @@ Get peer version and build time
 
 **Request**
 ```js
-var smartholdemApi = require("sth-api")
+var smartholdemApi = require("sthjs-wrapper")
 smartholdemApi.getPeerVersion((error, success, response) => {
   console.log(response);
 });

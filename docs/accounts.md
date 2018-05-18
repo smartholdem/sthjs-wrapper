@@ -6,7 +6,7 @@ Get the balance of an account.
 
 **Request**
 ```js
-var smartholdemApi = require("sth-api")
+var smartholdemApi = require("sthjs-wrapper")
 smartholdemApi.getBalance("Address of the account", (error, success, response) => {
     console.log(response);
 });
@@ -25,7 +25,7 @@ Get the public key of an account. If the account does not exist the API call wil
 
 **Request**
 ```js
-var smartholdemApi = require("sth-api")
+var smartholdemApi = require("sthjs-wrapper")
 smartholdemApi.getPublicKey("Address of the account", (error, success, response) => {
     console.log(response);
 });
@@ -44,7 +44,7 @@ Returns account information of an address.
 
 **Request**
 ```js
-var smartholdemApi = require("sth-api")
+var smartholdemApi = require("sthjs-wrapper")
 smartholdemApi.getAccount("Address of the account", (error, success, response) => {
     console.log(response);
 });
@@ -70,7 +70,7 @@ Get votes by account address.
 
 **Request**
 ```js
-var smartholdemApi = require("sth-api")
+var smartholdemApi = require("sthjs-wrapper")
 smartholdemApi.getVotes("Address of the account", (error, success, response) => {
     console.log(response);
 });
