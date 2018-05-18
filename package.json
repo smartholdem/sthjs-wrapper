@@ -8,13 +8,28 @@
     "url": "git+https://github.com/smartholdem/sthjs-wrapper.git"
   },
   "keywords": [
-    "STH",
+    "smartholdem",
     "API",
+    "wrapper",
     "Node.js",
     "SmartHoldemJS"
   ],
-  "author": "SmartHoldemDev <dev@smartholdem.io>",
+  "author": {
+    "name": "Smartholdem Developers",
+    "email": "dev@smartholdem.io",
+    "url": "https://github.com/smartholdem"
+  },
+  "contributors": [
+    {
+      "name": "SmartHoldem",
+      "email": "dev@SmartHoldem.io",
+      "url": "https://github.com/SmartHoldem"
+    }
+  ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smartholdem/sthjs-wrapper/issues"
+  },
   "dependencies": {
     "bigi": "^1.4.2",
     "bignumber.js": "^4.0.2",
