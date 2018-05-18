@@ -32,7 +32,7 @@
   },
   "directories": {
     "doc": ".",
-    "examples": "docs"
+    "examples": "./docs"
   },
   "dependencies": {
     "bigi": "^1.4.2",
