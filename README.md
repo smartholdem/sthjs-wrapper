@@ -2,6 +2,12 @@
 
 A Node.JS module which provides a wrapper for the SmartHoldem API.
 
+```shell
+
+npm install --save sthjs-wrapper
+
+```
+
 ## Initialization
 
 Before you begin, choose a network to initialize a list of nodes in that network

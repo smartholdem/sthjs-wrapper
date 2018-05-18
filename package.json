@@ -1,6 +1,6 @@
 {
   "name": "sthjs-wrapper",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A Node.JS module which provides a wrapper for the SmartHoldem API.",
   "main": "src/index.js",
   "repository": {
