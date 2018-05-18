@@ -1,5 +1,7 @@
 # SmartHoldem JS API Wrapper
 
+A Node.JS module which provides a wrapper for the SmartHoldem API.
+
 ## Initialization
 
 Before you begin, choose a network to initialize a list of nodes in that network
