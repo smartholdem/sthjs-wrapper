@@ -39,7 +39,8 @@ var seeds = {
         "80.211.38.83"
     ],
     tor: [
-        "4xgx6qwyez5f35vo.onion"
+        "4xgx6qwyez5f35vo.onion",
+        "sthxxcpnpncphhmz.onion"
     ]
 };
 
