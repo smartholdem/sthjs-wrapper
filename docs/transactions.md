@@ -10,7 +10,7 @@ Creates a transaction object to be sent
 ```js
 var smartholdemApi = require("sthjs-wrapper");
 var options = {
-  vendorField: "Smartbridge field (optional)",
+  vendorField: "Comment field (optional)",
   secondPassphrase: "Sender second passphrase (optional)"
 };
 var transaction = smartholdemApi.createTransaction("Sender passphrase",
@@ -112,7 +112,7 @@ smartholdemApi.getTransactionsList(parameters, (error, success, response) => {
         timestamp: Seconds since genesis block (Integer),
         amount: Transaction amount (Integer)
         fee: Transaction fee (Integer),
-        venderField: Vender field/Smartbridge (String),
+        vendorField: Vendor field/Comment (String),
         senderId: Sender address (String),
         recipientId: Recipient address (String),
         senderPublicKey: Sender public key (String),
