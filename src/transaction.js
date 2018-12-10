@@ -26,6 +26,19 @@ Transaction.createTransaction = (passPhrase, recipientAddr, amount, options) => 
     return transaction;
 };
 
+Transaction.createMultiSignatureTransaction = (passPhrase, options) => {
+    let transaction;
+    if(options)
+    {
+        let secondPassphrase = options.secondPassphrase ? options.secondPassphrase : null;
+        let lifetime = options.lifetime ? options.lifetime : 0x00;
+        let keysgroup = options.keysgroup ? options.keysgroup : null;
+        let min = options.min ? options.min : 1;
+       transaction = sth.transaction.createMultisignature(passPhrase, secondPassphrase, keysgroup, lifetime, min);
+    }
+    return transaction;
+};
+
 Transaction.createDelegateTransaction = (passPhrase, delegateName, secondPass) => {
     var transaction = sth.delegate.createDelegate(passPhrase, delegateName, secondPass);
     return transaction;
