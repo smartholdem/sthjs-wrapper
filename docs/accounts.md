@@ -6,8 +6,15 @@ Account related API calls.
 **Request**
 ```js
 const smartholdemApi = require("sthjs-wrapper");
-let isValid = smartholdemApi.validate("Address of the account");
-console.log(isValid); // { isValid: true }
+let Result = smartholdemApi.validate("Address of the account");
+console.log(result);
+```
+
+**Result**
+```
+{
+  isValid: true
+}
 ```
 
 ### Get balance
