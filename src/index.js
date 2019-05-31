@@ -14,6 +14,7 @@ module.exports = {
     broadcastTxs: Api.broadcastTxs,
 
     // Account
+    validate: Account.validate,
     getBalance: Account.getBalance,
     getPublicKey: Account.getPublicKey,
     getAccount: Account.getAccount,
