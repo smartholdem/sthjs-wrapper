@@ -1,6 +1,16 @@
 ## Accounts
 Account related API calls.
 
+### Validate Address
+
+**Request**
+```js
+var smartholdemApi = require("sthjs-wrapper")
+smartholdemApi.validate("Address of the account", (error, success, response) => {
+    console.log(response);
+});
+```
+
 ### Get balance
 Get the balance of an account.
 
