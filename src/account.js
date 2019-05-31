@@ -4,7 +4,9 @@ const sth = require("sthjs");
 const Account = {};
 
 Account.validate = function (address) {
-    return (sth.crypto.validateAddress(address));
+    return ({
+        isValid: sth.crypto.validateAddress(address)
+    });
 };
 
 Account.getBalance = function (address, callback) {
