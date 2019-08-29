@@ -16,6 +16,8 @@ Before you begin, choose a network to initialize a list of nodes in that network
 
 var smartholdemApi = require('sthjs-wrapper');
 var network = 'main'; //or 'dev'
+
+smartholdemApi.setPreferredNode('127.0.0.1:6100') // optional set default your node ip:port
 smartholdemApi.init(network);
 
 ```
